@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap-website",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "http://biswal19.github.io/bootstrap-website",
+  "description": "It is a bootstrap project",
+  "main": "index.js",
+  "scripts": {
+  "start":"webpack-dev-server --mode development --open --hot",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}
